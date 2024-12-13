@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %} Result Page {% endblock %}
+{% block content %}
+<h1>Predicted Diamond Price</h1>
+<p>The predicted price of the diamond is: ₹{{ price }}</p>
+<a href="{{ url_for('index') }}" class="btn btn-primary">Predict Again</a>
+{% endblock %}
